@@ -13,10 +13,27 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: start;
       min-height: 100vh;
       padding: 20px;
       text-align: center;
+    }
+
+    header {
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      max-width: 120px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .banner {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 30px;
+      border-radius: 12px;
     }
 
     h1 {
@@ -31,7 +48,7 @@
       margin-bottom: 20px;
     }
 
-    .cta-button {
+    .cta-button, .telegram-button {
       background-color: #8a2be2;
       color: white;
       border: none;
@@ -41,9 +58,11 @@
       cursor: pointer;
       text-decoration: none;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin: 10px;
     }
 
-    .cta-button:hover {
+    .cta-button:hover, .telegram-button:hover {
       background-color: #a64bf4;
     }
 
@@ -55,9 +74,19 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="https://via.placeholder.com/120x60?text=LOGO" alt="Logo" class="logo" />
+  </header>
+
+  <video class="banner" autoplay muted loop playsinline>
+    <source src="https://example.com/nama-video.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeos.
+  </video>
+
   <h1>🎁 Bônus Exclusivo Para Você!</h1>
   <p>Aproveite depósito com bônus de 10%, cashback de até 30% e recompensa diária de 0,3% rollover. Promoção permanente para jogadores ativos!</p>
-  <a href="#" class="cta-button">Jogar Agora</a>
+  <a href="https://situsmu.com" class="cta-button" target="_blank">Jogar Agora</a>
+  <a href="https://t.me/grupotelegrammu" class="telegram-button" target="_blank">Entrar no Telegram</a>
 
   <footer>
     &copy; 2025 Promo Game. Todos os direitos reservados.
